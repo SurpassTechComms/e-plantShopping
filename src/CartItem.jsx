@@ -20,6 +20,10 @@ const CartItem = ({ onContinueShopping }) => {
     return total.toFixed(2);
     };
 
+    const handleContinueShopping = (e) => {
+        e.preventDefault();
+        onContinueShopping(e);
+      };
     const handleCheckoutShopping = (e) => {
     alert('Functionality to be added for future reference');
     };
